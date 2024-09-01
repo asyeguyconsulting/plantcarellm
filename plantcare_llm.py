@@ -87,15 +87,15 @@ if uploaded_file is not None:
     # Display the result
     st.write(f"**Identified Plant:** {plant_name}")
 
-    # Display the image with the predicted label using matplotlib
-    fig, ax = plt.subplots()
-    ax.imshow(image)
-    ax.set_title(f"Identified Plant: {plant_name}", fontsize=16)
-    ax.axis('off')
-    st.pyplot(fig)
+    # # Display the image with the predicted label using matplotlib
+    # fig, ax = plt.subplots()
+    # ax.imshow(image)
+    # ax.set_title(f"Identified Plant: {plant_name}", fontsize=16)
+    # ax.axis('off')
+    # st.pyplot(fig)
 
     # URL of the PDF containing care information
-    pdf_url = "https://www.kellogggarden.com/wp-content/uploads/2020/05/Monthly-Flower-Gardening-Guide.pdf"
+    pdf_url = "https://www.bybrittanygoldwyn.com/wp-content/uploads/2022/11/Easy-Houseplant-Care-Guide.pdf" #"https://www.kellogggarden.com/wp-content/uploads/2020/05/Monthly-Flower-Gardening-Guide.pdf"
 
     # Extract text from the PDF
     pdf_text = extract_pdf_text(pdf_url)
